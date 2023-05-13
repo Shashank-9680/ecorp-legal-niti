@@ -1,0 +1,50 @@
+.team__item {
+  box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+}
+.team__item-thumb {
+  display: flex;
+  padding: 2px;
+  margin-top: 1rem;
+  border: 1px solid black;
+  border-radius: 100px;
+  height: 140px;
+  width: 140px;
+}
+.team__item-thumb > img {
+  border-radius: 65ypx;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.team__item-content {
+  padding: 0;
+}
+h4 {
+  padding: 0;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.team__item-content .name {
+  margin: 0;
+}
+.team__item-content .team__social-list {
+  margin: 0;
+}
+.team__item:nth-child(even) {
+  margin-top: 0px;
+}
+
+.team__item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.team__item-content .team__social-list {
+  padding-bottom: 0.5rem;
+}
+.team__item {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}

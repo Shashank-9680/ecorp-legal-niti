@@ -1,0 +1,13 @@
+@media screen and (max-width: 1000px) {
+    /* CSS styles to be applied below 700px */
+    .wrap{
+        flex-wrap: wrap;
+        /* background-color: aqua; */
+        /* margin-top: px; */
+    }
+  }
+
+  /* .element-container{
+    margin-top: 200px;
+  } */
+  

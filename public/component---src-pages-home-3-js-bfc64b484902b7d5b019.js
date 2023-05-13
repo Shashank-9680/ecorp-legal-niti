@@ -1,0 +1,1 @@
+(self.webpackChunk_nerko_gatsby=self.webpackChunk_nerko_gatsby||[]).push([[2391],{7315:function(){}}]);

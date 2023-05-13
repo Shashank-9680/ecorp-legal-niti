@@ -1,0 +1,86 @@
+.businesses-heading {
+  text-align: left;
+}
+.tool-heading {
+  text-align: center;
+}
+.ul-heading {
+  text-align: center;
+}
+h5 {
+  color: #ffdd00;
+
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.col-1 > h5 {
+  padding-bottom: 2.5rem;
+}
+.col-2 > h5 {
+  padding-bottom: 1rem;
+}
+.col-3 > h5 {
+  padding-bottom: 1rem;
+}
+.col-4 > h5 {
+  padding-bottom: 1rem;
+}
+
+.box {
+  /* margin-right: 100px; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.nav-link {
+  color: rgb(255, 254, 254);
+}
+
+@media (max-width: 1000px) {
+  .wraps {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+  .wraps div {
+    text-align: center;
+    flex-basis: 100%;
+    align-items: center;
+    align-self: center !important;
+  }
+  /* CSS styles to be applied below 700px */
+}
+.useful-links-box > h5 {
+  margin-bottom: 1.5rem;
+}
+.useful-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding-bottom: 2rem;
+  scroll-behavior: smooth;
+}
+.useful-links-container > a {
+  color: white;
+}
+.useful-links-container > a:hover {
+  color: #0d6efd;
+}
+.icons-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding-bottom: 2rem;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+.icons:hover {
+  color: rgb(179, 84, 179);
+}
