@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import anime from "animejs/lib/anime.es.js"
 import "./mint-area.css"
-
+import image from "./AdobeStock_480488513.jpeg"
 function SingleMintItem({ icon, title, subtitle, png = "svg" }) {
   return (
     <div className="col-md-6 col-sm-9">
@@ -60,6 +60,9 @@ const MintArea = () => {
   // }, [])
   return (
     <section id="minting" className="mint-area section-pt-80 section-pb-50">
+      <div className="img-container">
+        <img src={image} alt="" />
+      </div>
       <div className="container">
         <div
           className="row justify-content-center"

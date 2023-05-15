@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-
+import "./faq.css"
 const SingleFaq = ({ item }) => {
   const { title, desc, id, parent, desc_2 } = item || {}
   const [scrollPos, setScrollPos] = useState(0)

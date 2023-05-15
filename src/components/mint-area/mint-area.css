@@ -1,6 +1,24 @@
 .section-pt-80 {
   padding-top: 80px;
+  position: relative;
+  /* background-image: url("./AdobeStock_480488513.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  opacity: 0.2; */
 }
+.img-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.6;
+}
+
 .title {
   font-family: "Poppins", sans-serif;
 }

@@ -1,24 +1,50 @@
+@media (max-width: 1500px) {
+  .banner-padding {
+    padding: 160px 0 100px;
+  }
+}
+
+.bg-image {
+  opacity: 0.86;
+}
 .hero-heading {
   font-family: Poppins, sans-serif;
-  width: 100%;
+
   color: black;
   font-size: 1.5rem;
 }
-.row {
-  justify-content: space-between;
+.col-lg-6-a {
+  margin-left: 60%;
 }
-
+.home-row {
+  width: 100%;
+}
+/* .home-row > .col-lg-6 {
+  width: 100%;
+} */
 .banner__background-wrap {
   min-height: 0vh;
 }
-.background-video {
+.banner__content {
+  display: flex;
+
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+/* .background-video {
   width: 100%;
 
   backdrop-filter: blur(100px);
 
   object-fit: cover;
   /* optional depending on what you want to do in your app */
-  z-index: -1;
+.banner__content .description {
+  font-size: 24px;
+  line-height: 1.5;
+  color: black;
+  margin: 0px;
 }
-.banner__content {
-}
+/* .explore-btn {
+  align-items: flex-start;
+} */

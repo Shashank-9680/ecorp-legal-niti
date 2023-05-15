@@ -13,7 +13,7 @@
   width: 140px;
 }
 .team__item-thumb > img {
-  border-radius: 65ypx;
+  border-radius: 65px;
   aspect-ratio: 3/2;
   object-fit: cover;
 }

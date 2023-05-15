@@ -2,8 +2,9 @@ import React from "react"
 import Layout from "../layout/layout"
 import { useState } from "react"
 import service_data from "../data/service-data"
+
 const Ourservices = ({ location }) => {
-  const { service } = location.state
+  const service = location.state?.service // Use optional chaining to handle undefined location.state
 
   const [details, setDetails] = useState({
     Email: "",
@@ -32,18 +33,22 @@ const Ourservices = ({ location }) => {
       <section className=" banner-padding ">
         <div className="wrapper">
           <div className="left-wing">
-            <h2 className="left-wing-heading">{service.name}</h2>
-            <br />
-            <br />
-            <p>{service.paragraph}</p>
+            {service && (
+              <>
+                <h2 className="left-wing-heading">{service.name}</h2>
+                <br />
+                <br />
+                <p>{service.paragraph}</p>
 
-            <p>{service.desc}</p>
+                <p>{service.desc}</p>
 
-            <br />
-            <p>{service.middesc}</p>
-            <br />
+                <br />
+                <p>{service.middesc}</p>
+                <br />
 
-            <p>{service.enddesc}</p>
+                <p>{service.enddesc}</p>
+              </>
+            )}
           </div>
           <div className="right-wing">
             <br />
@@ -90,4 +95,5 @@ const Ourservices = ({ location }) => {
     </Layout>
   )
 }
+
 export default Ourservices

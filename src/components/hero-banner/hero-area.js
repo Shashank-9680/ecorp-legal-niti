@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import "./hero-area.css"
-import sample from "./sample4.mp4"
+import image from "./img6.jpeg"
 const HeroArea = () => {
   // const animate_1 = useRef(null)
   // const animate_2 = useRef(null)
@@ -15,9 +15,7 @@ const HeroArea = () => {
     <>
       <section className="banner-area banner-padding position-relative">
         <div className="banner__background-wrap">
-          <video className="background-video" src={sample} autoPlay loop muted>
-            {" "}
-          </video>
+          <img className="bg-image" src={image} alt="" />{" "}
           {/* <img src={image} alt="" /> */}
           {/* <div
             className="background"
@@ -25,8 +23,8 @@ const HeroArea = () => {
           ></div> */}
         </div>
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
+          <div className="home-row">
+            <div className="col-lg-6-a">
               <div
                 className="banner__content"
                 data-anime="opacity:[0, 1]; translateY:[24, 0]; onview: true; delay: 100;"
@@ -58,7 +56,7 @@ const HeroArea = () => {
                 <h3 className="hero-heading" style={{ fontSize: "50px" }}>
                   Legal help made simple - in just a few clicks with AI.
                 </h3>
-                <p className="desc">
+                <p className="description">
                   Legal Niti provides cost-effective solutions with transparent
                   pricing, and users can access legal experts and tax
                   consultants in real-time for instant solutions to their
@@ -67,7 +65,7 @@ const HeroArea = () => {
                 </p>
 
                 <a
-                  className="btn border-btn banner__btn"
+                  className="btn border-btn banner__btn "
                   href="/service"
                   target="_blank"
                 >
