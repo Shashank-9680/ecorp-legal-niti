@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap');
-.titleaa{
-    /* color: aqua; */
-    /* font-family: 'Poppins', sans-serif; */
-    font-family: 'Roboto', sans-serif;  
-    color: black;
-    font-size: 30px ;
-    margin-bottom: 30px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&display=swap");
+.titleaa {
+  /* color: aqua; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Roboto", sans-serif;
+  color: #00c4f4;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .hoover:hover {
-    /* transform: scale(1.05);
+  /* transform: scale(1.05);
     cursor: pointer;
     transition: transform 0.2s ease-in-out; */
 }
-.data{
-    color: black;
+.data {
+  color: #fff;
 }
-.data:hover{
-    color: blue;
-     transform: scale(1.05); 
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out; 
+.data:hover {
+  color: blue;
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
 }

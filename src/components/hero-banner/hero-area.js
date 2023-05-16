@@ -1,6 +1,6 @@
 import React, { useEffect } from "react"
 import "./hero-area.css"
-import image from "./img6.jpeg"
+// import sample from "./sample7.mp4"
 const HeroArea = () => {
   // const animate_1 = useRef(null)
   // const animate_2 = useRef(null)
@@ -15,7 +15,8 @@ const HeroArea = () => {
     <>
       <section className="banner-area banner-padding position-relative">
         <div className="banner__background-wrap">
-          <img className="bg-image" src={image} alt="" />{" "}
+          {/* <img className="bg-image" src={image} alt="" />{" "} */}
+          {/* <video className="bg-vedio" src={sample} autoPlay loop muted></video> */}
           {/* <img src={image} alt="" /> */}
           {/* <div
             className="background"

@@ -34,10 +34,10 @@
     }
     &__item {
         @include flexbox();
-        background: var(--tg-common-color-white);
+       
         @include border-radius(24px);
         padding: 48px 25px;
-        box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 3px 8px -1px #13c2c2;
         margin-bottom: 32px;
         @media #{$md} {
             @include border-radius(20px);

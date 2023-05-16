@@ -17,7 +17,7 @@
 }
 .tg-text-gradient {
     background-color: var(--tg-gradient-1);
-    background-image: linear-gradient(25deg, var(--tg-gradient-1), var(--tg-gradient-2));
+    background-image: linear-gradient(25deg, #13c2c2,#87e8de);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -43,6 +43,7 @@
             display: block;
             font-size: 18px;
             line-height: 1.7;
+            color: #fff;
             @media #{$lg} {
                 line-height: 1.5;
                 font-size: 16px;

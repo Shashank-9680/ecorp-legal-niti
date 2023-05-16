@@ -29,7 +29,7 @@ const about = () => {
               </h2>
               <p
                 className="content"
-                style={{ fontSize: "20px", color: "black" }}
+                style={{ fontSize: "20px", color: "#fff" }}
               >
                 Our AI-powered platform is designed to streamline the entire
                 process of incorporating a startup and handling GST compliance.

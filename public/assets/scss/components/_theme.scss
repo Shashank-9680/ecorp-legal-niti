@@ -28,6 +28,7 @@ body {
 	font-weight: var(--tg-fw-regular);
 	color: var(--tg-body-color);
 	line-height: var(--tg-body-line-height);
+	background:#002329;
 }
 img,
 .img {
@@ -69,7 +70,6 @@ h6 {
 	font-family: var(--tg-heading-font-family);
 	color: var(--tg-heading-color);
 	margin-top: 0px;
-	font-weight: var(--tg-fw-bold);
 	line-height: 1.2;
 	text-transform: unset;
 }

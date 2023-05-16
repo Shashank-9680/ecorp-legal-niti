@@ -16,8 +16,8 @@ const Pricingtemp = ({ arrw = data }) => {
             justifyContent: "center",
             alignContent: "center",
             width: "300px",
-            background: "#FFFFFF",
-            boxShadow: "0px 4px 25px -1px rgba(0, 0, 0, 0.25)",
+            // background: "#FFFFFF",
+            boxShadow: "0px 4px 25px -1px #00474f",
             padding: "45px 40px 45px 40px",
             borderRadius: " 20px",
             cursor: "pointer",
@@ -29,7 +29,7 @@ const Pricingtemp = ({ arrw = data }) => {
 
             <h5 className="price">{arr[1]}</h5>
             <p className="money">{arr[2]}</p>
-            <button className="bt-style">
+            <button className="btn border-btn banner__btn">
               <a className="con" href="/cart">
                 {arr[3]}
               </a>

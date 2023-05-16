@@ -1,15 +1,19 @@
-import React, { useRef, useEffect } from 'react';
-import anime from 'animejs/lib/anime.es.js';
-
-export function SingleBrand({ img_1, img_2, }) {
+import React, { useRef, useEffect } from "react"
+import anime from "animejs/lib/anime.es.js"
+import "./brand.css"
+export function SingleBrand({ img_1, img_2 }) {
   return (
     <div className="brand__item">
-      <img width="83px"
-        src={`/assets/img/customers/${img_1}`} style={{margin:"0px 30px",height:"83.6px"}}
+      <img
+        width="83px"
+        src={`/assets/img/customers/${img_1}`}
+        style={{ margin: "0px 30px", height: "83.6px" }}
         className="has-active-light"
         alt="brand"
       />
-      <img width="83px"  style={{margin:"0px 30px"}}
+      <img
+        width="83px"
+        style={{ margin: "0px 30px" }}
         src={`/assets/img/customers/${img_2}`}
         className="has-active-dark"
         alt="brand"
@@ -19,7 +23,7 @@ export function SingleBrand({ img_1, img_2, }) {
 }
 
 const HomeBrands = () => {
-  const animate_1 = useRef(null);
+  const animate_1 = useRef(null)
   // animate
   // useEffect(() => {
   //   anime({
@@ -42,7 +46,6 @@ const HomeBrands = () => {
           <div className="col-xl-10 col-12">
             <h6 className="brand__title">OUR WONDERFUL CUSTOMERS </h6>
             <div className="brand__list">
-
               {/* ////put the right images */}
               <SingleBrand img_1="1.png" img_2="1.png" />
               <SingleBrand img_1="2.png" img_2="2.png" />

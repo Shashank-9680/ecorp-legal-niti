@@ -12,12 +12,12 @@
 .brand {
     &__title {
         text-align: center;
-        font-family: var(--tg-body-font-family);
-        font-weight: var(--tg-fw-bold);
-        font-size: 14px;
-        color: #7B7583;
+        
+       
+        font-size: 20px;
+        color: #00c4f4;
         letter-spacing: 1px;
-        margin: 0 0 35px;
+        margin: 0 0 45px;
     }
     &__list {
         @include flexbox();

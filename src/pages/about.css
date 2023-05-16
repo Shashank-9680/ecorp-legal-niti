@@ -10,13 +10,13 @@
 .banner-paddinga {
   padding: 80px 0 100px;
 }
-.banner-paddinga {
+/* .banner-paddinga {
   background-image: url("./image1.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: 0;
-}
+} */
 
 @media (max-width: 1500px) {
   .banner-paddinga {
@@ -81,6 +81,7 @@
 .headline {
   padding: 0px 0px 30px 0px;
   font-family: "Poppins", sans-serif;
+  color: #00c4f4;
 }
 
 .left-part {
@@ -104,4 +105,7 @@
   .right-part {
     flex-basis: 100%;
   }
+}
+.content {
+  color: #fff;
 }

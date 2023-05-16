@@ -17,7 +17,7 @@
   font-style: normal;
   font-weight: 400;
   height: 58px;
-  color: #000000;
+  color: #fff;
   font-size: 48px;
 }
 
@@ -25,9 +25,9 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px !important;
+  font-size: 25px !important;
   line-height: 23px !important;
-  color: #000000;
+  color: #00c4f4;
 
   text-align: center;
   word-wrap: break-word;
@@ -46,11 +46,10 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 13px;
+  color: #fff;
   /* identical to box height */
-
-  color: #747474;
 }
 
 .price1 {
@@ -67,7 +66,7 @@
 .bullets {
   font-family: "Poppins", sans-serif;
   font-style: normal !important;
-  font-weight: 500 !important;
+  /* font-weight: 500 !important; */
   font-size: 1rem !important;
   line-height: 22px !important;
   word-spacing: 2px;
@@ -75,7 +74,7 @@
 
   width: 198px;
 
-  color: #000000;
+  color: #fff;
 }
 
 .price-container {

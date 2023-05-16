@@ -15,11 +15,10 @@ import { BsFacebook } from "react-icons/bs"
 const Footer = () => {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-color">
         <div
           className="container"
           style={{
-            background: "black",
             padding: "30px 0px",
             display: "flex",
             justifyContent: "center",
@@ -165,32 +164,8 @@ const Footer = () => {
               }}
             >
               <Link to="/service">
-                <button
-                  className="glow-on-hover"
-                  style={{
-                    backgroundColor: "black",
-                    color: "white",
-                    padding: "10px 20px",
-                    border: "none",
-                    borderRadius: "5px",
-                    boxShadow: "0px 0px 10px white",
-                    transition: "box-shadow 0.3s ease-in-out",
-                  }}
-                  onMouseOver={e => {
-                    e.target.style.boxShadow = "0px 0px 20px white"
-                  }}
-                  onMouseOut={e => {
-                    e.target.style.boxShadow = "0px 0px 10px white"
-                  }}
-                  onFocus={e => {
-                    e.target.style.boxShadow = "0px 0px 20px white"
-                  }}
-                  onBlur={e => {
-                    e.target.style.boxShadow = "0px 0px 10px white"
-                  }}
-                >
-                  {" "}
-                  See more services{" "}
+                <button className="btn border-btn banner__btn ">
+                  See more services
                 </button>
 
                 {/* className="glow-on-hover" */}
@@ -200,12 +175,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-black">
+      <div className="bg-color">
         <h5 className="tool-heading">Tools</h5>
         <div
           className="container"
           style={{
-            background: "black",
             padding: "30px 0px",
             display: "flex",
             justifyContent: "center",

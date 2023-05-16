@@ -24,8 +24,8 @@ const Pricing = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "beige",
-            margin: "23px 0px",
+
+            margin: "27px 0px",
             borderRadius: "34px",
             width: "90%",
             flexWrap: "wrap",
@@ -46,7 +46,7 @@ const Pricing = () => {
                   cursor: "pointer",
                   padding: "20px 20px ",
                   margin: "12px 23px",
-                  border: "1px solid black",
+                  border: "1px solid #00474f",
                   borderRadius: "10px",
                 }}
                 id="button"

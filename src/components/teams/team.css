@@ -1,3 +1,9 @@
+.name {
+  color: #00c4f4;
+}
+.designation {
+  color: #fff;
+}
 .team__item {
   box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.08);
   display: flex;

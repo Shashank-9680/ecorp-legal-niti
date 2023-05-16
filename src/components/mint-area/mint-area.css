@@ -59,7 +59,7 @@
 }
 .mint__item {
   display: flex;
-  background: var(--tg-common-color-white);
+
   border-radius: 24px;
   align-items: center;
   box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.08);
@@ -115,4 +115,8 @@
   font-size: 18px;
   line-height: 1.5;
   margin: 0 0;
+  color: #fff;
+}
+.title {
+  color: #00c4f4;
 }

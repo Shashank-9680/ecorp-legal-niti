@@ -1,39 +1,38 @@
-import { Link } from "gatsby";
-import React, { useEffect, useState } from "react";
-import { window } from "browser-monads";
-import { Link as SinglePageLink } from "react-scroll";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { useLocation } from "@reach/router";
+import { Link } from "gatsby"
+import React, { useEffect, useState } from "react"
+import { window } from "browser-monads"
+import { Link as SinglePageLink } from "react-scroll"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { useLocation } from "@reach/router"
 // internal
-import OffCanvas from "../../components/common/off-canvas";
-import ConnectModal from "../../components/common/modals/connect-modal";
-import useSticky from "../../hooks/use-sticky";
-import { menu_data } from "../../data/menu_data";
-
+import OffCanvas from "../../components/common/off-canvas"
+import ConnectModal from "../../components/common/modals/connect-modal"
+import useSticky from "../../hooks/use-sticky"
+import { menu_data } from "../../data/menu_data"
 
 import logo from "../../../public/assets/img/logo/logo.png"
 const Header = () => {
-  const { pathname } = useLocation();
+  const { pathname } = useLocation()
 
-  const [activeSubMenu, setActiveSubMenu] = useState(null);
+  const [activeSubMenu, setActiveSubMenu] = useState(null)
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   useEffect(() => {
-    setActiveSubMenu(null); // Reset activeSubMenu whenever pathname changes
-  }, [pathname]);
+    setActiveSubMenu(null) // Reset activeSubMenu whenever pathname changes
+  }, [pathname])
 
   useEffect(() => {
-        if (isSidebarOpen) {
-          window.document.body.classList.add("mobile-menu-visible")
-        } else {
-          window.document.body.classList.remove("mobile-menu-visible")
-        }
-      }, [isSidebarOpen])
+    if (isSidebarOpen) {
+      window.document.body.classList.add("mobile-menu-visible")
+    } else {
+      window.document.body.classList.remove("mobile-menu-visible")
+    }
+  }, [isSidebarOpen])
 
-      const handleClick = () => {
-            setIsSidebarOpen(true)
-          }
-        
+  const handleClick = () => {
+    setIsSidebarOpen(true)
+  }
+
   return (
     <header>
       <div id="sticky-header" className="tg-header__area transparent-header">
@@ -41,8 +40,8 @@ const Header = () => {
           <div className="row">
             <div className="col-12">
               <div onClick={handleClick} className="mobile-nav-toggler">
-                 <i className="flaticon-menu-1"></i>
-               </div>
+                <i className="flaticon-menu-1"></i>
+              </div>
               <div className="tgmenu__wrap">
                 <nav className="tgmenu__nav">
                   <div className="logo">
@@ -83,7 +82,9 @@ const Header = () => {
                                   <li key={j}>
                                     <Link
                                       to={sub.link}
-                                      className={pathname === sub.link ? "active" : ""}
+                                      className={
+                                        pathname === sub.link ? "active" : ""
+                                      }
                                     >
                                       {sub.title}
                                     </Link>
@@ -130,8 +131,6 @@ const Header = () => {
                         >
                           Sign in
                         </button>
-                     
-
                       </li>
                     </ul>
                   </div>
@@ -153,7 +152,3 @@ const Header = () => {
 }
 
 export default Header
-
-
-
-

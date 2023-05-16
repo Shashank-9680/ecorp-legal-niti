@@ -9,13 +9,13 @@
 }
 .hero-heading {
   font-family: Poppins, sans-serif;
-
-  color: black;
+  text-align: center;
+  color: #00c4f4;
   font-size: 1.5rem;
 }
-.col-lg-6-a {
+/* .col-lg-6-a {
   margin-left: 60%;
-}
+} */
 .home-row {
   width: 100%;
 }
@@ -30,19 +30,20 @@
 
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.8rem;
+  gap: 2rem;
 }
-/* .background-video {
+.bg-vedio {
   width: 100%;
-
-  backdrop-filter: blur(100px);
-
-  object-fit: cover;
-  /* optional depending on what you want to do in your app */
+  /* height: 80%; */
+  background-position: center;
+  object-fit: contain;
+  opacity: 0.4;
+}
+/* optional depending on what you want to do in your app */
 .banner__content .description {
   font-size: 24px;
   line-height: 1.5;
-  color: black;
+  color: #fff;
   margin: 0px;
 }
 /* .explore-btn {
