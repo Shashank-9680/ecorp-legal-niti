@@ -15,7 +15,7 @@ import { BsFacebook } from "react-icons/bs"
 const Footer = () => {
   return (
     <>
-      <div className="bg-color">
+      <div className="bg-color color-1">
         <div
           className="container"
           style={{

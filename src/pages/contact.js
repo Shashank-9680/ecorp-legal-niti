@@ -2,10 +2,13 @@ import React from "react"
 import Layout from "../layout/layout"
 import "./contact.css"
 import { Seo } from "../components/seo"
-
+import sample from "./sample11.mp4"
 const contact = () => {
   return (
     <Layout>
+      <div className="contact-bg-vedio">
+        <video className="bg-vedio" src={sample} autoPlay loop muted></video>
+      </div>
       <section className=" banner-padding ">
         <div className="containeraaa">
           <div className="content">

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import "./hero-area.css"
-// import sample from "./sample7.mp4"
+import sample from "./sample11.mp4"
+// import image from "./img8.jpeg"
 const HeroArea = () => {
   // const animate_1 = useRef(null)
   // const animate_2 = useRef(null)
@@ -13,10 +14,10 @@ const HeroArea = () => {
   useEffect(() => {}, [])
   return (
     <>
-      <section className="banner-area banner-padding position-relative">
+      <section className="banner-area banner-paddingaa position-relative">
         <div className="banner__background-wrap">
           {/* <img className="bg-image" src={image} alt="" />{" "} */}
-          {/* <video className="bg-vedio" src={sample} autoPlay loop muted></video> */}
+          <video className="bg-vedio" src={sample} autoPlay loop muted></video>
           {/* <img src={image} alt="" /> */}
           {/* <div
             className="background"
@@ -54,7 +55,7 @@ const HeroArea = () => {
                   ref={animate_4}
                 /> */}
 
-                <h3 className="hero-heading" style={{ fontSize: "50px" }}>
+                <h3 className="hero-heading">
                   Legal help made simple - in just a few clicks with AI.
                 </h3>
                 <p className="description">

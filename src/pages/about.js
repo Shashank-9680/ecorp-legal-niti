@@ -5,19 +5,18 @@ import Logo from "../../public/assets/img/artwork/about-logo.png"
 import ServiceBg from "../components/service-bg"
 import GradientPosition from "../components/gradient-position"
 import Breadcrumb from "../components/common/breadcrumb"
-import Video from "../utils/2.mp4"
+import sample from "./sample11.mp4"
 import "./about.css"
 
 const about = () => {
   return (
     <Layout>
-      <section className=" banner-paddinga ">
+      <section className=" banner-padding ">
+        <div className="about-bg-image">
+          <video className="bg-vedio" src={sample} autoPlay loop muted></video>
+        </div>
         <div className="about">
-          <div
-            className="element-container"
-
-            // style={{ padding: "221px 0px 0px 0px" }}
-          >
+          <div className="element-container">
             <div className="left-part">
               <img src={Logo} className="about-vector" />
             </div>
@@ -27,10 +26,7 @@ const about = () => {
                 We're a team who is focused on using the latest AI technology to
                 simplify Incorporation and GST compliance for startups.{" "}
               </h2>
-              <p
-                className="content"
-                style={{ fontSize: "20px", color: "#fff" }}
-              >
+              <p className="content" style={{ color: "#fff" }}>
                 Our AI-powered platform is designed to streamline the entire
                 process of incorporating a startup and handling GST compliance.
                 From registering your company and obtaining the necessary

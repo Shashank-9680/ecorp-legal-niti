@@ -6,18 +6,15 @@ import "./service.css"
 import { Seo } from "../components/seo"
 
 // import Video from "../utils/video.mp4"
-import Video from "../utils/2.mp4"
+import sample from "./sample11.mp4"
 
 const Service = () => {
   return (
     <Layout>
       <section className=" banner-paddinga ">
-        <div className="video-container">
-          <video className="video" autoPlay loop muted>
-            <source src={Video} type="video/mp4" />
-            {/* Add additional source elements for other video formats */}
-          </video>
-          <h2 className="heading">Services</h2>
+        <div className="service-bg-vedio">
+          <video className="bg-vedio" src={sample} autoPlay loop muted></video>
+          <h2 className="service-heading">Services</h2>
         </div>
       </section>
       {/* <section className=" banner-padding "  > */}

@@ -1,5 +1,5 @@
 .busc-box {
-  background-color: rgba(246, 250, 253, 0.8);
+  /* background-color: rgba(246, 250, 253, 0.8); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   font-weight: 700;
   font-size: 40.6619px;
   line-height: 49px;
-  color: #231f20;
+  color: #00c4f4;
   font-family: Roboto;
   margin-bottom: 24px;
 }
@@ -29,7 +29,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  color: #231f20;
+  color: #fff;
   font-family: Roboto;
   margin-bottom: 10px;
 }
@@ -37,7 +37,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: #606162;
+  color: #fff;
   font-family: Roboto;
   margin-bottom: 14px;
 }
@@ -62,14 +62,14 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #606162;
+  color: #fff;
 }
 .radio-buttons .label {
   margin-bottom: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #606162;
+  color: #fff;
   font-family: Roboto;
 }
 .given-input {
@@ -81,7 +81,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
-  color: #606162;
+
   font-family: Roboto;
 }
 .user-input-rs > input {
@@ -92,7 +92,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #231f20;
+  color: #fff;
   font-family: Roboto;
 }
 .user-input-rs {
