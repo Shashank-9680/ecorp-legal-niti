@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import "./hero-area.css"
 import sample from "./sample11.mp4"
+import Typewriter from "typewriter-effect"
 // import image from "./img8.jpeg"
 const HeroArea = () => {
   // const animate_1 = useRef(null)
@@ -12,6 +13,7 @@ const HeroArea = () => {
   // const animate_7 = useRef(null)
 
   useEffect(() => {}, [])
+
   return (
     <>
       <section className="banner-area banner-paddingaa position-relative">
@@ -56,8 +58,24 @@ const HeroArea = () => {
                 /> */}
 
                 <h3 className="hero-heading">
-                  Legal help made simple - in just a few clicks with AI.
+                  <Typewriter
+                    onInit={typewriter => {
+                      typewriter
+
+                        .typeString(
+                          " Legal help made simple - in just a few clicks with AI."
+                        )
+
+                        .pauseFor(1000)
+                        .deleteAll()
+                        .typeString(
+                          " Legal help made simple - in just a few clicks with AI."
+                        )
+                        .start()
+                    }}
+                  />
                 </h3>
+
                 <p className="description">
                   Legal Niti provides cost-effective solutions with transparent
                   pricing, and users can access legal experts and tax

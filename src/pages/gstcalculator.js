@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./style.css"
 import "./gst.css"
 import Layout from "../layout/layout"
@@ -12,24 +12,24 @@ const Gstcalculator = () => {
   const [profitRatio, setProfitRatio] = useState(0)
   const [totalProfit, setTotalProfit] = useState(0)
 
+  useEffect(() => {
+    calculateGst()
+  }, [cost, gstRate, inclusive])
+
   const handleRadioChange = e => {
     setInclusive(e.target.value === "inclusive")
-    calculateGst()
   }
 
   const handleCostChange = e => {
     setCost(e.target.value)
-    calculateGst()
   }
 
   const handleGstRateChange = e => {
     setGstRate(Number(e.target.value))
-    calculateGst()
   }
 
   const handleProfitRatioChange = e => {
     setProfitRatio(Number(e.target.value))
-    calculateGst()
   }
 
   const calculateGst = () => {
@@ -37,24 +37,25 @@ const Gstcalculator = () => {
     const gstPercentage = gstRate / 100
 
     if (inclusive) {
-      const totalGstValue = costValue * gstPercentage
-      const totalCostValue = costValue + totalGstValue
-      const totalProfitValue = costValue * (1 - gstPercentage)
+      const totalGstValue = (costValue * gstPercentage) / (1 + gstPercentage)
+      const totalCostValue = costValue - totalGstValue
+      const totalProfitValue =
+        (costValue * (1 - gstPercentage) * profitRatio) / 100
 
       setTotalCost(totalCostValue.toFixed(2))
       setTotalGst(totalGstValue.toFixed(2))
       setTotalProfit(totalProfitValue.toFixed(2))
     } else {
-      const totalGstValue = costValue * gstPercentage
-      const totalCostValue = costValue
-      const totalProfitValue =
-        (costValue / (1 + gstPercentage)) * (profitRatio / 100)
+      const totalGstValue = costValue * (gstRate / 100)
+      const totalCostValue = costValue + totalGstValue
+      const totalProfitValue = (costValue * profitRatio) / 100
 
       setTotalCost(totalCostValue.toFixed(2))
       setTotalGst(totalGstValue.toFixed(2))
       setTotalProfit(totalProfitValue.toFixed(2))
     }
   }
+
   return (
     <Layout>
       <section className="gst-box">
@@ -128,14 +129,19 @@ const Gstcalculator = () => {
           <div className="right-side">
             <div className="right-container">
               <div className="selling-cost">
-                <p>Total Cost of Selling</p>
-                <p>₹ {totalCost}</p>
+                {!inclusive && <p>Total Cost of Selling</p>}
+                {!inclusive && <p>₹{totalCost}</p>}
+                {inclusive && <p>Total Cost of Selling</p>}
+                {inclusive && <p>₹ {totalCost}</p>}
               </div>
 
               <div className="total-gst">
-                <p>Total GST</p>
-                <p>₹ {totalGst}</p>
+                {!inclusive && <p>Total GST</p>}
+                {!inclusive && <p>₹{totalGst}</p>}
+                {inclusive && <p>Total GST</p>}
+                {inclusive && <p>₹ {totalGst}</p>}
               </div>
+
               <div className="total-profit">
                 {!inclusive && <p>Total Profit</p>}
                 {!inclusive && <p>₹ {totalProfit}</p>}

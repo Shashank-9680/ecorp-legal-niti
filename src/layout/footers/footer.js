@@ -244,7 +244,7 @@ const Footer = () => {
             <div className="col mb-3">
               <ul className="nav flex-column">
                 <li className="nav-item mb-2">
-                  <Link to="#" className="nav-link p-0 ">
+                  <Link to="/hracalculator" className="nav-link p-0 ">
                     HRA Calculator
                   </Link>
                 </li>

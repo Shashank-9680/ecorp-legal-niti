@@ -31,13 +31,14 @@ const Sipcalculator = () => {
     let estimatedReturns = 0
 
     if (investmentType === "sip") {
-      for (let i = 0; i < timePeriod; i++) {
-        investedAmount += monthlyInvestment
-        totalValue = Math.ceil(
-          (totalValue + monthlyInvestment) * (1 + expectedReturnRate / 100)
-        )
-      }
-      estimatedReturns = totalValue - investedAmount
+      // for (let i = 0; i < timePeriod; i++) {
+      //   investedAmount += monthlyInvestment
+      //   totalValue = Math.ceil(
+      //     (totalValue + monthlyInvestment) * (1 + expectedReturnRate / 100)
+      //   )
+      // }
+      totalValue = monthlyInvestment * (1 + expectedReturnRate) * timePeriod
+      estimatedReturns = (totalValue - monthlyInvestment) / timePeriod
     } else if (investmentType === "lumpsum") {
       investedAmount = monthlyInvestment
       totalValue = Math.ceil(
@@ -120,7 +121,7 @@ const Sipcalculator = () => {
                   value={timePeriod}
                   onChange={handleTimePeriodChange}
                 />
-                <p className="year-symbol">yr</p>
+                <p className="year-symbol">mon.</p>
               </div>
             </div>
           </div>

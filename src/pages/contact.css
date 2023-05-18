@@ -82,6 +82,7 @@
   padding: 0 15px;
   resize: none;
   box-shadow: 2px 2px 2px 1px #13c2c2;
+  color: #fff;
 }
 .right-side .message-box {
   min-height: 110px;

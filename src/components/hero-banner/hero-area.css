@@ -34,7 +34,7 @@
 }
 .bg-vedio {
   width: 100%;
-
+  filter: brightness(60%);
   background-position: center;
   object-fit: contain;
 }

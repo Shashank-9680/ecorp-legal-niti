@@ -9,7 +9,7 @@ const Gratuitycalculator = () => {
   const [gratuityAmount, setGratuityAmount] = useState(0)
 
   useEffect(() => {
-    const gratuity = monthlyService * yearsOfService * 12
+    const gratuity = Math.round((15 * monthlyService * yearsOfService) / 26)
     setGratuityAmount(gratuity)
   }, [monthlyService, yearsOfService])
 

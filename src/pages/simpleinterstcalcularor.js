@@ -101,7 +101,7 @@ const Simpleinterstcalcularor = () => {
             </div>
 
             <div className="given-input">
-              <label htmlFor="cost-input">Cost of Goods/Services</label>
+              <label htmlFor="cost-input">Rate of Interst</label>
               <div className="user-input-rs">
                 <input
                   type="number"
@@ -112,7 +112,7 @@ const Simpleinterstcalcularor = () => {
               </div>
             </div>
             <div className="given-input">
-              <label htmlFor="cost-input">Cost of Goods/Services</label>
+              <label htmlFor="cost-input">Time Period</label>
               <div className="user-input-rs">
                 <input type="number" onChange={handleTimeChange} value={time} />
               </div>

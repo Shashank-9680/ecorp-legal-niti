@@ -16,15 +16,11 @@ const Npscalculator = () => {
     const numberOfInstallments = investmentPeriod * 12
     const futureValue =
       monthlyContribution *
-      Math.ceil(
-        ((Math.pow(1 + interestRate, numberOfInstallments) - 1) /
-          interestRate) *
-          (1 + interestRate)
-      )
-    const totalInvestment = Math.ceil(
-      monthlyContribution * numberOfInstallments
-    )
-    const interestEarned = Math.ceil(futureValue - totalInvestment)
+      ((1 + interestRate, numberOfInstallments - 1) / interestRate) *
+      (1 + interestRate)
+
+    const totalInvestment = monthlyContribution * numberOfInstallments
+    const interestEarned = futureValue - totalInvestment
 
     setTotalInvestment(totalInvestment.toFixed(2))
     setInterestEarned(interestEarned.toFixed(2))
