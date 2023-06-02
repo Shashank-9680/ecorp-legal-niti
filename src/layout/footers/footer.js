@@ -6,6 +6,8 @@ import { BsWhatsapp } from "react-icons/bs"
 import { BsTwitter } from "react-icons/bs"
 import { BsYoutube } from "react-icons/bs"
 import { BsFacebook } from "react-icons/bs"
+import { BsInstagram } from "react-icons/bs"
+import{BsLinkedin} from "react-icons/bs"
 
 // handle scroll to top
 // const handleScrollToTop = () => {
@@ -307,6 +309,12 @@ const Footer = () => {
             </div>
             <div className="icons">
               <BsYoutube />
+            </div>
+            <div className="icons">
+              <BsInstagram />
+            </div>
+            <div className="icons">
+              <BsLinkedin/>
             </div>
           </div>
         </div>

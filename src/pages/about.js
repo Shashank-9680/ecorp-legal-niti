@@ -12,14 +12,14 @@ const about = () => {
   return (
     <Layout>
       <section className=" banner-padding ">
-        <div className="about-bg-image">
+        {/* <div className="about-bg-image">
           <video className="bg-vedio" src={sample} autoPlay loop muted></video>
-        </div>
+        </div> */}
         <div className="about">
           <div className="element-container">
-            <div className="left-part">
+            {/* <div className="left-part">
               <img src={Logo} className="about-vector" />
-            </div>
+            </div> */}
             <div className="right-part">
               <h2 className="headline">
                 {" "}

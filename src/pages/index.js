@@ -1,4 +1,5 @@
 import React from "react"
+import "./index.css"
 import { Seo } from "../components/seo"
 import HomeBrands from "../components/brands/home-brands"
 import HeroArea from "../components/hero-banner/hero-area"
@@ -15,6 +16,7 @@ import FaqArea from "../components/faqs/faq-area"
 // import CtaArea from '../components/cta/cta-area';
 import GradientPosition from "../components/gradient-position"
 import Pricing from "../components/pricing/pricing"
+import Footer from "../layout/footers/footer"
 const HomePage = () => {
   return (
     <Layout>
@@ -37,6 +39,7 @@ const HomePage = () => {
       {/* <SectionDivider /> */}
       {/* <CtaArea/> */}
       {/* <SectionDivider /> */}
+      <Footer />
     </Layout>
   )
 }

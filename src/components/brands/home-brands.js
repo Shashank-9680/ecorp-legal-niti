@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import anime from "animejs/lib/anime.es.js"
 import "./brand.css"
+import sample from "./sample11.mp4"
 export function SingleBrand({ img_1, img_2 }) {
   return (
     <div className="brand__item">

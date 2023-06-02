@@ -154,6 +154,21 @@ const team_data = [
       // { link: 'https://discord.com/', icon: 'fab fa-discord', name: "Discord" },
     ],
   },
+  {
+    id: 12,
+    img: "/assets/img/team/vethika.jpg",
+    name: "Vethika",
+    designation: "Intern",
+    social_links: [
+      {
+        link: "https://www.linkedin.com/in/varsa-gupta-027104265/",
+        icon: "fab fa-linkedin",
+        name: "Linkedin",
+      },
+      // { link: 'https://www.instagram.com/', icon: 'fab fa-instagram', name: 'Instagram' },
+      // { link: 'https://discord.com/', icon: 'fab fa-discord', name: "Discord" },
+    ],
+  },
 ]
 
 export default team_data

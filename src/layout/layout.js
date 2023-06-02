@@ -1,15 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect } from "react"
 // internal
-import "../styles/index.scss";
-import Header from "./headers/header";
-import Footer from "./footers/footer";
-import ToggleLightDark from "../components/toggle-light-dark";
-import { tg_theme_toggler } from "../utils/utils";
+import "../styles/index.scss"
+import Header from "./headers/header"
+import Footer from "./footers/footer"
+// import sample from "./sample11.mp4"
+// import "./layout.css"
+import ToggleLightDark from "../components/toggle-light-dark"
+import { tg_theme_toggler } from "../utils/utils"
 // import Preloader from "../components/preloader";
-import usePreloader from "../hooks/use-preloader";
+import usePreloader from "../hooks/use-preloader"
 
 const Layout = ({ children, blog_page = false }) => {
-  const isLoading = usePreloader();
+  const isLoading = usePreloader()
 
   // useEffect(() => {
   //   if(!isLoading){
@@ -26,14 +28,14 @@ const Layout = ({ children, blog_page = false }) => {
       {/* {isLoading ? (
         <Preloader />
       ) : ( */}
-        <>
-          <Header blog_page={blog_page} />
-          <main id={"home"} className="fix">
-            {children}
-          </main>
-          <Footer />
-          {/* <ToggleLightDark /> */}
-        </>
+      <>
+        <Header blog_page={blog_page} />
+        <main id={"home"} className="fix">
+          {children}
+        </main>
+        {/* <Footer /> */}
+        {/* <ToggleLightDark /> */}
+      </>
       {/* )} */}
     </React.Fragment>
   )

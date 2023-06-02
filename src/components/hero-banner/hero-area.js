@@ -17,15 +17,15 @@ const HeroArea = () => {
   return (
     <>
       <section className="banner-area banner-paddingaa position-relative">
-        <div className="banner__background-wrap">
-          {/* <img className="bg-image" src={image} alt="" />{" "} */}
-          <video className="bg-vedio" src={sample} autoPlay loop muted></video>
-          {/* <img src={image} alt="" /> */}
-          {/* <div
+        {/* <div className="banner__background-wrap"> */}
+        {/* <img className="bg-image" src={image} alt="" />{" "} */}
+        {/* <video className="bg-vedio" src={sample} autoPlay loop muted></video> */}
+        {/* <img src={image} alt="" /> */}
+        {/* <div
             className="background"
             style={{ backgroundImage: "url(/assets/img/bg/gradient_bg01.png" }}
           ></div> */}
-        </div>
+        {/* </div> */}
         <div className="container">
           <div className="home-row">
             <div className="col-lg-6-a">
@@ -63,13 +63,13 @@ const HeroArea = () => {
                       typewriter
 
                         .typeString(
-                          " Legal help made simple - in just a few clicks with AI."
+                          " Legal help made simple - in just a few clicks with AI"
                         )
 
                         .pauseFor(1000)
                         .deleteAll()
                         .typeString(
-                          " Legal help made simple - in just a few clicks with AI."
+                          " Legal help made simple - in just a few clicks with AI"
                         )
                         .start()
                     }}

@@ -1,3 +1,17 @@
 .brand__title {
   color: #00c4f4;
 }
+/* .bg-vedio {
+  width: 100%;
+  filter: brightness(60%);
+  background-repeat: repeat-y;
+  background-position: center;
+}
+.background-video {
+  position: absolute;
+  left: 0;
+  top: 100;
+  width: 100vw;
+  pointer-events: none;
+  z-index: -1;
+} */

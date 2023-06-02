@@ -44,7 +44,10 @@ const Pricing = () => {
                 className={number[1] === b ? "active1" : ""}
                 style={{
                   cursor: "pointer",
-                  padding: "20px 20px ",
+                  // padding: "20px 20px ",
+                  padding: "20px 0",
+                  textAlign: "center",
+                  width: "303.91px",
                   margin: "12px 23px",
                   border: "1px solid #00474f",
                   borderRadius: "10px",

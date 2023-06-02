@@ -10,22 +10,25 @@ const Pricingtemp = ({ arrw = data }) => {
           className="scale"
           style={{
             textAlign: "center",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            justifyContent: "center",
-            alignContent: "center",
+            // display: "flex",
+            // flexDirection: "row",
+            // alignItems: "center",
+            // justifyContent: "center",
+            // alignContent: "center",
             width: "300px",
             // background: "#FFFFFF",
             boxShadow: "0px 4px 25px -1px #00474f",
-            padding: "45px 40px 45px 40px",
+            // padding: "45px 40px 45px 40px",
+            height: "700px",
             borderRadius: " 20px",
             cursor: "pointer",
             margin: "10px 10px",
           }}
         >
           <div className="price-container" key={arr[0]}>
-            <h5 className="first">{arr[0]}</h5>
+            <div className="first-heading">
+              <h5 className="first">{arr[0]}</h5>
+            </div>
 
             <h5 className="price">{arr[1]}</h5>
             <p className="money">{arr[2]}</p>

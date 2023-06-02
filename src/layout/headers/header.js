@@ -53,7 +53,7 @@ const Header = () => {
                       <img src="/assets/img/logo/nerko-dark.svg" alt="Nerko" />
                     </Link>
                   </div>
-                  <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                  {/* <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                     <ul className="navigation">
                       {menu_data.map((menu, i) => (
                         <React.Fragment key={i}>
@@ -107,7 +107,68 @@ const Header = () => {
                         </React.Fragment>
                       ))}
                     </ul>
+                  </div> */}
+                  <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
+                    <ul className="navigation">
+                      {menu_data.map((menu, i) => (
+                        <React.Fragment key={i}>
+                          {menu.hasDropdown ? (
+                            <li
+                              className={`menu-item-has-children ${
+                                activeSubMenu === i ? "active" : ""
+                              }`}
+                              onMouseEnter={() => setActiveSubMenu(i)}
+                              onMouseLeave={() => setActiveSubMenu(null)}
+                            >
+                              <Link
+                                to={menu.link}
+                                className={
+                                  (pathname === "/" && menu.link === "/") ||
+                                  pathname.startsWith(menu.link)
+                                    ? "active"
+                                    : ""
+                                }
+                              >
+                                {menu.title}
+                              </Link>
+                              <ul className="sub-menu">
+                                {menu.submenus.map((sub, j) => (
+                                  <li key={j}>
+                                    <Link
+                                      to={sub.link}
+                                      className={
+                                        pathname === sub.link ? "active" : ""
+                                      }
+                                    >
+                                      {sub.title}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </li>
+                          ) : (
+                            <li
+                              className={
+                                (pathname.startsWith(menu.link) ||
+                                  (pathname === "/" && menu.link === "/")) &&
+                                menu.link !== "/"
+                                  ? "active"
+                                  : ""
+                              }
+                            >
+                              <Link
+                                to={menu.link}
+                                className={pathname === "/" ? "active" : ""}
+                              >
+                                {menu.title}
+                              </Link>
+                            </li>
+                          )}
+                        </React.Fragment>
+                      ))}
+                    </ul>
                   </div>
+
                   <div className="tgmenu__action">
                     <ul className="list-wrap">
                       <li className="header-social">

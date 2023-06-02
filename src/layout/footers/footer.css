@@ -1,6 +1,9 @@
 .businesses-heading {
   text-align: left;
+  /* height: 60px;
+  padding: 0; */
 }
+
 .tool-heading {
   text-align: center;
 }
@@ -11,20 +14,22 @@ h5 {
   color: #00c4f4;
 
   font-size: 1.5rem;
-  padding-top: 2rem;
 }
-
+.mb-2 {
+  height: 25px;
+  margin-bottom: 0px !important;
+}
 .col-1 > h5 {
-  padding-bottom: 2.5rem;
+  height: 60px;
 }
 .col-2 > h5 {
-  padding-bottom: 1rem;
+  height: 60px;
 }
 .col-3 > h5 {
-  padding-bottom: 1rem;
+  height: 60px;
 }
 .col-4 > h5 {
-  padding-bottom: 1rem;
+  height: 60px;
 }
 
 .box {
@@ -35,8 +40,14 @@ h5 {
 }
 .nav-link {
   color: rgb(255, 254, 254);
+  /* font-size: 1.2rem; */
 }
-
+.nav-link:hover {
+  color: #00c4f4;
+}
+.flex-column {
+  gap: 2rem;
+}
 @media (max-width: 1000px) {
   .wraps {
     flex-wrap: wrap;
@@ -67,12 +78,12 @@ h5 {
   color: white;
 }
 .useful-links-container > a:hover {
-  color: #0d6efd;
+  color: #00c4f4;
 }
 .icons-container {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
   padding-bottom: 2rem;
 }
 .icons {

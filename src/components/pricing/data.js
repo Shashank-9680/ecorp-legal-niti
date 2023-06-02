@@ -20,13 +20,13 @@ const data1 = [
     ],
   ],
   [
-    "ISO Certification",
+    "ISO Certifications",
     "perfect for beginners",
     "₹999",
     "add to cart",
     "120/month when you renew",
     [
-      "ISO certification assists every business with a mark of quality and high standards. With us, you get assistance with picking the right type of ISO certification for your business and we work with you on connecting with a trustworthy vendor and walking you through the entire process.",
+      "Every business operating in the food industry must register under FSSAI. You get guidance in choosing the right type of license for your business. Our experts will take care of the filing process and explain how to run your business as per the FSSAI rules to avoid being penalised.",
     ],
   ],
   [
@@ -118,7 +118,7 @@ const data3 = [
   [
     "Patent Registration",
     "perfect for beginners",
-    " ",
+    "₹1999",
     "add to cart",
     "120/month when you renew",
     [

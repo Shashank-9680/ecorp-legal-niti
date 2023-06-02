@@ -11,7 +11,10 @@
   padding: 12px 50px 12px 50px;
   margin: 28px 0px 0px 0px;
 }
-
+.first-heading {
+  margin-top: 4rem;
+  height: 80px;
+}
 .money {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -19,41 +22,44 @@
   height: 58px;
   color: #fff;
   font-size: 48px;
+  margin-bottom: 0px;
 }
 
 .first {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 25px !important;
-  line-height: 23px !important;
+  font-size: 27px !important;
+  /* line-height: 23px !important; */
   color: #00c4f4;
-
+  padding-top: 0px;
   text-align: center;
   word-wrap: break-word;
 }
 
 .con {
-  font-size: 14px !important;
+  /* font-size: 14px !important; */
   color: #ffffff !important;
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", "sans-serif";
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
 }
 
 .price {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", "sans-serif";
   font-style: normal;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   line-height: 13px;
   color: #fff;
+  padding-top: 0px;
   /* identical to box height */
 }
 
 .price1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", "sans-serif";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -64,7 +70,7 @@
 }
 
 .bullets {
-  font-family: "Poppins", sans-serif;
+  font-family: "Outfit", "sans-serif";
   font-style: normal !important;
   /* font-weight: 500 !important; */
   font-size: 1rem !important;
@@ -75,13 +81,14 @@
   width: 198px;
 
   color: #fff;
+  margin-bottom: 0px;
 }
 
 .price-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 h5 {
   margin-bottom: 0px;

@@ -6,9 +6,9 @@ import sample from "./sample11.mp4"
 const contact = () => {
   return (
     <Layout>
-      <div className="contact-bg-vedio">
+      {/* <div className="contact-bg-vedio">
         <video className="bg-vedio" src={sample} autoPlay loop muted></video>
-      </div>
+      </div> */}
       <section className=" banner-padding ">
         <div className="containeraaa">
           <div className="content">
